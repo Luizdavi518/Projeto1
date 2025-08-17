@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meus Projetos</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+    body {
+      background: url(assets/projects.jpg) no-repeat top center/cover;
+      min-height: 100vh; /* Corrigido */
+    }
+
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 24px 0;
+
+    }
+
+    .project-card {
+      background: var(--surface-color);
+      border: 1px solid var(--stroke-color);
+      border-radius: 8px;
+      padding: 16px;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+
+    .project-card img {
+     width: 100%;       /* imagem ocupa toda a largura do container pai */
+     max-width: 300px;  /* limita a largura máxima da imagem */
+     height: auto;      /* mantém a proporção */
+     display: block;    /* remove espaços em linha */
+     margin: 0 auto;    /* centraliza horizontalmente */
+     object-fit: contain; /* mantém a imagem inteira sem cortes */
+    }
+
+    .project-info h2 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .project-info p {
+      font-size: 14px;
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+
+    .tech-list {
+      font-size: 12px;
+      opacity: 0.7;
+      margin-bottom: 8px;
+    }
+
+    .project-link {
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      color: var(--text-color);
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="profile">
+      <img src="assets/imagemluiz.png" alt="Foto do Luiz Davi sorrindo" />
+      <p>Esses são alguns dos meus projetos!</p>
+    </div>
+
+    <div class="cards-container">
+      <!-- Projeto 1 -->
+      <div class="project-card">
+        <div class="project-info">
+          <h2>Projeto 1</h2>
+          <p>Portifólio com informações sobre projetos e jornada de estudos.</p>
+          <p class="tech-list">HTML • CSS • JavaScript</p>
+          <a class="project-link" href="https://github.com/luizdavi518" target="_blank">
+            <ion-icon name="logo-github"></ion-icon> Ver no GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Projeto 2 -->
+       <div class="project-card">
+        <img src="assets/jogo-preview.png" alt="Preview do Jogo da Velha" />
+        <div class="project-info">
+          <h2>Jogo da Velha</h2>
+          <p>Jogo da velha simples e divertido, feito com HTML, CSS e JavaScript.</p>
+          <p class="tech-list">HTML • CSS • JavaScript</p>
+          <a class="project-link" href="https://luizdavi518.github.io/jogo-da-velha" target="_blank">
+            <ion-icon name="game-controller-outline"></ion-icon> Jogar agora
+          </a> 
+        </div>
+      </div>
+    </div>
+
+    <div id="social-links">
+      <a href="index.html" title="Voltar para o início">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </a>
+    </div>
+
+    <footer>
+      Feito com apoio da <a href="https://rocketseat.com.br/" target="_blank">Rocketseat</a>
+    </footer>
+  </div>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
