@@ -7,13 +7,15 @@ function togglemode() {
     const img = document.querySelector("#profile img")
 
     //substituir imagem
-    if(html.classList.contains('light')) {
+    //if(html.classList.contains('light')) {
    // se tiver light mode, adicionar a imagem light
-   img.setAttribute('src','assets/imagemluiz.png')
-   
-    } else {
-        img.setAttribute('src','assets/imagemluiz.png')
-    }
+   //img.setAttribute('src','assets/imagemluiz.png')
+   //
+    //} else {
+     //   img.setAttribute('src','assets/imagemluiz.png')
+    //}
+    function togglemode() {
+    document.documentElement.classList.toggle('light')
+}
 
-   
-} 
+}
